@@ -26,11 +26,34 @@ class GeneratePassword {
     }
 
     addContent(pass) {
-        let section1Div = document.querySelector('.section-1');
-        let passDiv = document.querySelector('.pass-div')
+        let copyBtnDiv = document.querySelector('.copy-btn-div');
+        let copyBtn = document.createElement('button');
+        let passwordText = document.querySelector('.password-text');
+        let oldBtn = document.querySelector('.copy-btn');
 
-        passDiv.textContent = pass;
-        section1Div.appendChild(passDiv)
+        if (oldBtn) {
+            oldBtn.remove()
+        }
+
+        passwordText.textContent = pass
+        passwordText.classList.add('password-text-style')
+        copyBtn.textContent = 'Copiar'
+        copyBtn.classList.add('copy-btn')
+        copyBtnDiv.appendChild(copyBtn)
+
+        copyBtn.addEventListener('click', () => {
+            let text = passwordText.textContent
+
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    alert("Senha copiada!");
+                })
+                .catch(err => {
+                    console.error("Erro ao copiar: ", err);
+                });
+
+        })
+
     }
 
     formEvent() {
@@ -42,13 +65,14 @@ class GeneratePassword {
             qntCaracteres = Number(qntCaracteres.value);
             let pass = this.generate(qntCaracteres)
             this.addContent(pass)
-            return console.log(pass)
+            return
+
         })
     }
 }
 
 let pass = new GeneratePassword()
-// console.log(pass.generate(12))
+
 
 
 
