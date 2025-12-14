@@ -60,6 +60,10 @@ class GeneratePassword {
         let form = document.querySelector('.section-1-form');
         form.addEventListener('submit', (e) => {
             let qntCaracteres = document.querySelector('.qnt-Caracteres');
+
+            if (qntCaracteres.value < 1) {
+                return alert('Insira um valor valido')
+            }
             e.preventDefault()
 
             qntCaracteres = Number(qntCaracteres.value);

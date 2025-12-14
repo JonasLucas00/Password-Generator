@@ -1,22 +1,24 @@
 # Password generator
 
 Simples gerador de senha que permite que o usuario escolha o tamanho da senha.
-A senha é gerada incluindo varios tipos de caracteres e caracteres especiais.
+A senha é gerada incluindo caracteres maiusculos, minusculos e especiais
 
 ## 🚀 Funcionalidades
 
-[x] Gerar senha
-[x] Escolher quantidade de caracteres
-[x] Contém caracteres especias
+- [x] Gerar senha
+- [x] Escolher quantidade de caracteres
+- [x] Contém caracteres especias
 
 ## 🛠 Tecnologias utilizadas
 
-- Javascript
-- Html
-- live server
+- JavaScript
+- HTML
+- Bootstrap
 
-### Backend
-- Node.js  
+### Frontend
+
+- Bootstrap
+
 
 ## 📦 Como executar o projeto
 
@@ -30,9 +32,16 @@ git clone https://github.com/JonasLucas00/Password-Generator.git
 cd nome-do-projeto
 ```
 
-3. Inicie o live server:
+3. Instale as dependencias:
+```bash
+npm install
+```
 
-- Instale a extensão live server na sua IDE e clique para abrir o arquivo html com ele 
+4. Inicie o live server:
+
+- Instale a extensão Live Server
+- Clique com o botão direito no arquivo HTML
+- Selecione Open with Live Server
 
 # Autor
 
