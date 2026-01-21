@@ -1,5 +1,7 @@
 # Password generator
 
+**Live Demo:** https://password-generator-ruby-gamma.vercel.app/
+
 Simples gerador de senha que permite que o usuario escolha o tamanho da senha.
 A senha é gerada incluindo caracteres maiusculos, minusculos e especiais
 
@@ -37,7 +39,7 @@ cd nome-do-projeto
 npm install
 ```
 
-4. Inicie o live server:
+4. Inicie com live server:
 
 - Instale a extensão Live Server
 - Clique com o botão direito no arquivo index.html
