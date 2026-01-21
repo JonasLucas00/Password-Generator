@@ -34,12 +34,7 @@ git clone https://github.com/JonasLucas00/Password-Generator.git
 cd nome-do-projeto
 ```
 
-3. Instale as dependencias:
-```bash
-npm install
-```
-
-4. Inicie com live server:
+3. Inicie com live server:
 
 - Instale a extensão Live Server
 - Clique com o botão direito no arquivo index.html
