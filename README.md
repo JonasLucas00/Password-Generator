@@ -40,7 +40,7 @@ npm install
 4. Inicie o live server:
 
 - Instale a extensão Live Server
-- Clique com o botão direito no arquivo HTML
+- Clique com o botão direito no arquivo index.html
 - Selecione Open with Live Server
 
 # Autor
